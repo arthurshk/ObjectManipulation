@@ -9,6 +9,9 @@ namespace Poolhall.Model
 {
     public class Ball
     {
+        internal double dX;
+        internal double dY;
+
         public int Id { get; set; }
         public Color Color { get; set; }
         public double X { get; set; }
