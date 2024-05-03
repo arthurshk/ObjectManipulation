@@ -5,9 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Poolhallogo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Canvas x:Name="gameCanvas">
-        <Rectangle Canvas.Left="100" Canvas.Top="100" Width="600" Height="300" Fill="Green"/>
-        <Button Content="Shoot" Command="{Binding ShootCommand}" HorizontalAlignment="Right" Margin="80"></Button>
-    </Canvas>
+        Title="Pool Hall" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="Green" Grid.Row="0" Grid.Column="0" />
+
+        <Rectangle Stroke="Black" StrokeThickness="5" Width="800" Height="400" Margin="100" Grid.Row="0" Grid.Column="0" />
+        <Ellipse Fill="Black" Width="20" Height="20" Canvas.Left="100" Canvas.Top="50" Grid.Row="0" Grid.Column="0" Margin="550,315,430,249" />
+        <Ellipse Fill="Black" Width="20" Height="20" Canvas.Left="700" Canvas.Top="50" Grid.Row="0" Grid.Column="0" Margin="560,255,420,309" />
+        <Ellipse Fill="Black" Width="20" Height="20" Canvas.Left="100" Canvas.Top="350" Grid.Row="0" Grid.Column="0" Margin="588,297,392,267" />
+        <Ellipse Fill="Black" Width="20" Height="20" Canvas.Left="700" Canvas.Top="350" Grid.Row="0" Grid.Column="0" Margin="578,220,402,344" />
+        <Ellipse Fill="Black" Width="20" Height="20" Canvas.Left="350" Canvas.Top="20" Grid.Row="0" Grid.Column="0" Margin="611,329,369,235" />
+        <Ellipse Fill="Black" Width="20" Height="20" Canvas.Left="350" Canvas.Top="480" Grid.Row="0" Grid.Column="0" Margin="604,265,376,299" />
+
+        <Ellipse Fill="White" Width="20" Height="20" Canvas.Left="400" Canvas.Top="250" Grid.Row="0" Grid.Column="0" Margin="407,307,573,257" />
+
+        <Ellipse Fill="Yellow" Width="15" Height="15" Canvas.Left="385" Canvas.Top="185" Grid.Row="0" Grid.Column="0" Margin="616,239,369,330" />
+        <Ellipse Fill="Red" Width="15" Height="15" Canvas.Left="415" Canvas.Top="185" Grid.Row="0" Grid.Column="0" Margin="646,239,338,330" />
+        <Ellipse Fill="Blue" Width="15" Height="15" Canvas.Left="400" Canvas.Top="160" Grid.Row="0" Grid.Column="0" Margin="646,277,338,292" />
+
+        <Ellipse Fill="Orange" Width="15" Height="15" Canvas.Left="370" Canvas.Top="210" Grid.Row="0" Grid.Column="0" Margin="654,307,331,262" />
+        <Ellipse Fill="Green" Width="15" Height="15" Canvas.Left="430" Canvas.Top="210" Grid.Row="0" Grid.Column="0" Margin="654,287,331,282" />
+        <Ellipse Fill="Purple" Width="15" Height="15" Canvas.Left="400" Canvas.Top="195" Grid.Row="0" Grid.Column="0" Margin="682,307,304,262" />
+
+        <Ellipse Fill="LightSkyBlue" Width="15" Height="15" Canvas.Left="355" Canvas.Top="235" Grid.Row="0" Grid.Column="0" Margin="674,277,311,292" />
+        <Ellipse Fill="Indigo" Width="15" Height="15" Canvas.Left="445" Canvas.Top="235" Grid.Row="0" Grid.Column="0" Margin="674,239,311,330" />
+
+        <Button Content="Shoot" Command="{Binding ShootCommand}" HorizontalAlignment="Right" Margin="80" Grid.Row="0" Grid.Column="0" />
+    </Grid>
 </Window>
